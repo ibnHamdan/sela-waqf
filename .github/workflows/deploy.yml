@@ -35,7 +35,6 @@ jobs:
         with:
           node-version: lts/*
           cache: 'npm'
-          cache-dependency-path: subdir/package-lock.json
       - run: npm ci
       - run: npm test
       - name: Install dependencies
